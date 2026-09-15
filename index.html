@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eduardo Tandiama Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/Jtandiama8/Jtandiama8.github.io/main/bridge.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header img {
+      width: 200px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #e0e0e0;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Navigation */
+    nav {
+      background: #2c3e50;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f8f9fa;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #2c3e50;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .experience, .certifications, .skills {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .experience:hover, .certifications:hover, .skills:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .portfolio-item {
+      background: #e9ecef;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      overflow: hidden;
+    }
+    .portfolio-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .portfolio-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .skills span {
+      background: #e9ecef;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .skills span:hover {
+      background: #2c3e50;
+      color: white;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    form button {
+      background: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #1a252f;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://raw.githubusercontent.com/Jtandiama8/Jtandiama8.github.io/main/photo.jpg" alt="Eduardo Tandiama">
+    <h1>Eduardo Mendelebar Tandiama Jr.</h1>
+    <p>Civil Engineer | Estimator | Project Manager</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Graduate of Civil Engineering from Polytechnic University of the Philippines - Manila, specializing in Water Resource Engineering. Certified Safety Officer 2, TESDA Plumbing NC II, and trained in Advanced Excel. Experienced in construction operations, project management, and estimation.</p>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Work Experience</h2>
+    <h3>Espacio Builders Inc. (Feb 2026 - Aug 2026)</h3>
+    <ul>
+      <li>Executed digital quantity takeoffs in PlanSwift for facade renovation projects.</li>
+      <li>Managed budget trackers and weekly progress reports for residential builds.</li>
+      <li>Designed structural layouts for reinforced concrete cisterns and stormwater tanks.</li>
+      <li>Oversaw site administration and payroll for 30+ workers.</li>
+      <li>Coordinated weekly alignment meetings among stakeholders.</li>
+    </ul>
+    <h3>Metro Stonerich Corporation (Aug 2023 - Sept 2023)</h3>
+    <ul>
+      <li>Conducted site inspections and assisted in concrete testing during high-rise construction.</li>
+      <li>Reviewed structural blueprints and performed rebar quantity calculations.</li>
+      <li>Generated accomplishment reports to track material usage and project progress.</li>
+      <li>Collaborated with engineers and technicians to resolve site concerns.</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=300&h=200&fit=crop" alt="Residential Construction">
+        <p><strong>Residential Construction</strong></p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=300&h=200&fit=crop" alt="Infrastructure Project">
+        <p><strong>Infrastructure Project</strong></p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=300&h=200&fit=crop" alt="Bridge Engineering">
+        <p><strong>Bridge Engineering</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="certifications">
+    <h2>Certifications & Achievements</h2>
+    <ul>
+      <li>Certified Safety Officer 2 (2024)</li>
+      <li>TESDA Plumbing NC II (2022)</li>
+      <li>Advanced Excel Training (2024)</li>
+      <li>Deputy Club Service Director RAC PUP (2023-2024)</li>
+      <li>Deputy Public Image Director RAC PUP (2022-2023)</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Key Skills</h2>
+    <span>PlanSwift</span><span>AutoCAD</span><span>Revit</span><span>Civil 3D</span><span>ETABS</span>
+    <span>Trello</span><span>Notion</span><span>MS Office</span><span>Google Workspace</span>
+    <span>Canva</span><span>Photoshop</span><span>DaVinci Resolve</span>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: ejtandiama@gmail.com</p>
+    <p>Phone: +639260111551</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/eduardotandiamajr/" target="_blank">linkedin.com/in/eduardotandiamajr/</a></p>
+    <form action="https://formspree.io/f/xyeyroaq" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Eduardo Tandiama. All rights reserved.</p>
+  </footer>
+</body>
+</html>
