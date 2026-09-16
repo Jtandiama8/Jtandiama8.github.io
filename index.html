@@ -11,32 +11,26 @@
       background-color: #f8f9fa;
       color: #2c3e50;
       line-height: 1.6;
-      background-image: url('bridge.jpg');
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(248, 249, 250, 0.92);
-      z-index: -1;
-      pointer-events: none;
     }
 
     /* Hero Section */
     header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: #112334;
       color: white;
       text-align: center;
       padding: 120px 20px;
       position: relative;
       overflow: hidden;
+    }
+
+    .header-background {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.55;
+      z-index: 0;
     }
 
     header::before {
@@ -73,7 +67,7 @@
       z-index: 1;
     }
 
-    header img {
+    header .profile-photo {
       width: 200px;
       border-radius: 50%;
       border: 5px solid white;
@@ -81,7 +75,7 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
     }
-    header img:hover {
+    header .profile-photo:hover {
       transform: scale(1.05) rotate(2deg);
     }
 
@@ -210,6 +204,15 @@
       color: #2c3e50;
       font-weight: 600;
     }
+    .portfolio-item small {
+      display: block;
+      margin-top: 6px;
+      color: #667eea;
+      font-size: 0.78em;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
     .portfolio-item:hover {
       transform: scale(1.05);
       box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
@@ -303,7 +306,8 @@
 </head>
 <body>
   <header>
-    <img src="photo.jpg" alt="Eduardo Tandiama">
+    <img class="header-background" src="bridge.jpg" alt="">
+    <img class="profile-photo" src="photo.jpg" alt="Eduardo Tandiama">
     <h1>Eduardo Mendelebar Tandiama Jr.</h1>
     <p>Civil Engineer | Estimator | Project Manager</p>
   </header>
@@ -345,16 +349,34 @@
     <h2>Portfolio</h2>
     <div class="portfolio-grid">
       <div class="portfolio-item">
-        <img src="bridge.jpg" alt="Bridge Engineering">
-        <p><strong>Bridge Engineering</strong></p>
+        <img src="assets/logo-1.png" alt="Brand Name logo">
+        <p><strong>Brand Name</strong></p>
+        <small>Logos & Branding</small>
       </div>
       <div class="portfolio-item">
-        <img src="bridge.jpg" alt="Infrastructure Project">
-        <p><strong>Infrastructure Project</strong></p>
+        <img src="assets/logo-2.png" alt="Gillesania Review Center logo">
+        <p><strong>Gillesania Review Center</strong></p>
+        <small>Logos & Branding</small>
       </div>
       <div class="portfolio-item">
-        <img src="bridge.jpg" alt="Construction Management">
-        <p><strong>Construction Management</strong></p>
+        <img src="assets/logo-3.png" alt="Catch-TV logo">
+        <p><strong>Catch-TV</strong></p>
+        <small>Logos & Branding</small>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/maldives.png" alt="Maldives travel poster">
+        <p><strong>Maldives Travel Poster</strong></p>
+        <small>Visual Design</small>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/site-photography.png" alt="Rotaract PUP event graphic">
+        <p><strong>Rotaract PUP Event Graphic</strong></p>
+        <small>Visual Design</small>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/wre-poster.png" alt="Wastewater treatment research poster">
+        <p><strong>Wastewater Treatment Research</strong></p>
+        <small>Research & Engineering</small>
       </div>
     </div>
   </section>
