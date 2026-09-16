@@ -11,6 +11,22 @@
       background-color: #f8f9fa;
       color: #2c3e50;
       line-height: 1.6;
+      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&h=800&fit=crop');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(248, 249, 250, 0.92);
+      z-index: -1;
+      pointer-events: none;
     }
 
     /* Hero Section */
@@ -303,7 +319,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Graduate of Civil Engineering from Polytechnic University of the Philippines - Manila, specializing in Water Resource Engineering. Certified Safety Officer 2, TESDA Plumbing NC II, and trained in Advanced Excel. Experienced in construction operations, project management, and estimation with a passion for delivering quality infrastructure solutions.</p>
+    <p>Graduate of Civil Engineering from Polytechnic University of the Philippines - Manila, specializing in Water Resource Engineering. Certified Safety Officer 2, TESDA Plumbing NC II, and trained [...]
   </section>
 
   <section id="experience" class="experience">
